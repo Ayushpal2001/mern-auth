@@ -19,6 +19,9 @@ app.use(express.json());
 connectDB();
 
 // Routes
+app.get("/",(req,res)=>{
+    res.send("Backend is running");
+})
 app.use("/api/auth", authRoutes);
 
 // Server
